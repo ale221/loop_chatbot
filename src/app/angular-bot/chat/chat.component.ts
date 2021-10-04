@@ -17,8 +17,10 @@ export class ChatComponent implements OnInit {
     });
   }
   sendMessage() {
-    console.log("chatts",this.value)
-    this.chatService.getBotAnswer(this.value);
-    this.value = '';
+    if (this.value) {
+      this.chatService.getBotAnswer(this.value);
+      this.value = '';
+    }
+    
   }
 }

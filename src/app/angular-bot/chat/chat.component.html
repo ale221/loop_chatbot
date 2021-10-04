@@ -1,3 +1,4 @@
+<div class="chatbot-position">
 <h1>Chat Bot</h1>
 <ng-container *ngFor="let message of messages">
   <div
@@ -13,8 +14,9 @@
 <label *ngIf="messages.length == 0; else dialogInfo" for="nameField"
   >Your message</label
 >
-<input [(ngModel)]="value" (keyup.enter)="sendMessage()" type="text" />
-<button (click)="sendMessage()">Send</button>
+<input [(ngModel)]="value" (keyup.enter)="sendMessage()" type="text"/><span><button (click)="sendMessage()">Send</button></span>
+
 <ng-template #dialogInfo>
   <span [className]="'float-right'">Total messages: {{ messages.length }}</span>
 </ng-template>
+</div>

@@ -20,3 +20,12 @@
   .message.from + .message.from {
     margin-top: -10px;
   }
+
+  .chatbot-position {
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+    border: 1px solid #606c76;
+    border-radius: 5px;
+    padding: 20px;
+  }
