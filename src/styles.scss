@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+.elementor:not(.elementor-bc-flex-widget) .elementor-widget-wrap{
+    display: flex !important;
+    width: 80% !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: auto !important;
+}
